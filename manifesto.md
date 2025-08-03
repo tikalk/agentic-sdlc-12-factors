@@ -53,4 +53,4 @@ Build organizational muscle memory by formalizing the sharing of best practices 
 
 ## Learn More
 
-Read the [manifesto](manifesto.md) for detailed explanations, implementation guides, and best practices for each factor.
+Read the [manifesto](https://tkl.to/tikal-12-factors) for detailed explanations, implementation guides, and best practices for each factor.
