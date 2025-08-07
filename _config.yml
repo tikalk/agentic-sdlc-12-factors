@@ -46,3 +46,4 @@ exclude:
 collections:
   prompts:
     output: true
+    permalink: /:collection/:name
