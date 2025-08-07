@@ -1,3 +1,10 @@
+---
+layout: default
+title: Mission Brief
+parent: Prompts
+nav_order: 2
+---
+
 # Mission Brief Prompt Template
 
 Help me create a Mission Brief to {YOUR_OBJECTIVE}.

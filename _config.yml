@@ -51,3 +51,10 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+  - docs/
+
+# Collections
+collections:
+  prompts:
+    output: true
+    permalink: /:collection/:name

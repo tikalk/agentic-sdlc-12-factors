@@ -1,0 +1,62 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install Jekyll dependencies
+    cmds:
+      - bundle install --path vendor/bundle
+
+  serve:
+    desc: Serve the site locally for development
+    deps: [install]
+    cmds:
+      - bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload
+
+  serve:incremental:
+    desc: Serve the site with incremental builds (faster)
+    deps: [install]
+    cmds:
+      - bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload --incremental
+
+  build:
+    desc: Build the site
+    deps: [install]
+    cmds:
+      - bundle exec jekyll build
+
+  build:verbose:
+    desc: Build the site with verbose output
+    deps: [install]
+    cmds:
+      - bundle exec jekyll build --verbose
+
+  clean:
+    desc: Clean build artifacts
+    cmds:
+      - bundle exec jekyll clean
+      - rm -rf _site
+
+  doctor:
+    desc: Check for potential issues
+    deps: [install]
+    cmds:
+      - bundle exec jekyll doctor
+
+  preview:
+    desc: Full preview workflow - clean, build, and serve
+    cmds:
+      - task: clean
+      - task: build
+      - task: serve
+
+  deps:
+    desc: Update dependencies
+    cmds:
+      - bundle update
+
+  lint:
+    desc: Lint the site configuration
+    deps: [install]
+    cmds:
+      - bundle exec jekyll doctor
+      - bundle exec jekyll build --dry-run
