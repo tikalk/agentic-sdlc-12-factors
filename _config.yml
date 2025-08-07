@@ -41,3 +41,8 @@ color_scheme: light
 # Exclude from processing
 exclude:
   - docs/
+
+# Collections
+collections:
+  prompts:
+    output: true
