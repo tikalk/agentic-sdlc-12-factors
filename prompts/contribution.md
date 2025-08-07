@@ -1,3 +1,10 @@
+---
+layout: default
+title: Contribution
+parent: Prompts
+nav_order: 1
+---
+
 # Workflow Contribution Prompt Template
 
 This workflow was effective. Generalize it into a new Mission Brief template.
