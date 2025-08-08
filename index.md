@@ -1,3 +1,8 @@
+---
+layout: default
+nav_exclude: true
+---
+
 # Twelve-Factor Agentic SDLC
 
 A methodology for building software with AI coding agents.

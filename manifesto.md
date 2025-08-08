@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Prompts
 nav_exclude: true
 ---
 
