@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Mission Brief
-parent: Prompts
-nav_order: 2
+nav_exclude: true
 ---
 
 # Mission Brief Prompt Template

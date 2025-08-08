@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Planning
-parent: Prompts
-nav_order: 3
+nav_exclude: true
 ---
 
 # Step-by-Step Plan Prompt Template

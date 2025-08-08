@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Contribution
-parent: Prompts
-nav_order: 1
+nav_exclude: true
 ---
 
 # Workflow Contribution Prompt Template
