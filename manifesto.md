@@ -55,7 +55,3 @@ Build organizational muscle memory by formalizing the sharing of best practices 
 4. Version control your prompts and directives
 5. Build your team's capability systematically
 6. Measure and improve continuously
-
-## Learn More
-
-Read the [manifesto](manifesto.md) for detailed explanations, implementation guides, and best practices for each factor.
