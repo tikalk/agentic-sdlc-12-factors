@@ -1,3 +1,9 @@
+---
+layout: default
+title: Planning
+nav_exclude: true
+---
+
 # Step-by-Step Plan Prompt Template
 
 Based on my Mission Brief (Goal, Constraints, Success Criteria):

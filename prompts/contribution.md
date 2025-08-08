@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contribution
+nav_exclude: true
+---
+
 # Workflow Contribution Prompt Template
 
 This workflow was effective. Generalize it into a new Mission Brief template.

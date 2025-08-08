@@ -1,3 +1,9 @@
+---
+layout: default
+title: Testing
+nav_exclude: true
+---
+
 # Risk-Based Testing Prompt Template
 
 Generate targeted tests for @file:{path/to/your/code.py}.

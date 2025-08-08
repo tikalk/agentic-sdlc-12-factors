@@ -1,3 +1,9 @@
+---
+layout: default
+title: Mission Brief
+nav_exclude: true
+---
+
 # Mission Brief Prompt Template
 
 Help me create a Mission Brief to {YOUR_OBJECTIVE}.
