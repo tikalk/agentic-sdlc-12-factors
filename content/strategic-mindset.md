@@ -1,4 +1,4 @@
-# Strategic Mindset: Developer as Orchestrator, AI as Intern
+# I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 
 The first factor in the Twelve-Factor Agentic SDLC emphasizes treating AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review.
 
