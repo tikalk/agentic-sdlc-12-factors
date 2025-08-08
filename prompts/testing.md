@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Testing
-parent: Prompts
-nav_order: 4
+nav_exclude: true
 ---
 
 # Risk-Based Testing Prompt Template
