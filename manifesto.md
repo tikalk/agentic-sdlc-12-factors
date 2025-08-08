@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompts
+nav_exclude: true
+---
+
 # The Twelve-Factor Agentic SDLC: One-Page Overview
 
 ## Introduction

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompts
+nav_exclude: true
+---
+
 # The 12-Factor Agentic SDLC: The Developer's Playbook
 
 **Objective:** To translate the Agentic SDLC principles into a practical workflow, moving from ad-hoc prompting to structured, high-velocity collaboration. This is how you leverage AI as a capable "intern" with you as the "orchestrator."
