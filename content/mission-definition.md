@@ -1,3 +1,7 @@
+---
+nav_order: 4
+parent: "The Twelve Factors"
+---
 # III. Mission Definition: From Intent to Specification
 
 *Every task begins with a formal statement of intent, which is then translated into an executable specification. This artifact, not an informal chat, becomes the unambiguous source of truth.*

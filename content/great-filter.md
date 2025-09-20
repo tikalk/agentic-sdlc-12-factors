@@ -1,3 +1,7 @@
+---
+nav_order: 7
+parent: "The Twelve Factors"
+---
 # VI. The Great Filter: Apply Irreplaceable Human Judgment
 
 *You are the ultimate arbiter of quality, filtering all AI output for correctness, architectural cohesion, security, and domain-specific taste. Accountability is not transferable.*

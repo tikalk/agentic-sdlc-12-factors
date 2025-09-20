@@ -1,3 +1,7 @@
+---
+nav_order: 5
+parent: "The Twelve Factors"
+---
 # IV. Structured Planning: Decompose and Triage Tasks
 
 *Use the committed specification to generate an AI-assisted implementation plan, which you will then review, refine, and strategically triage.*

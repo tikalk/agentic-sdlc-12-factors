@@ -1,3 +1,7 @@
+---
+nav_order: 12
+parent: "The Twelve Factors"
+---
 # XI. Directives as Code: Version and Share AI Behavior
 
 *Treat all natural language instructions that guide AI behavior—from reusable rules to task-specific specifications—as version-controlled assets.*

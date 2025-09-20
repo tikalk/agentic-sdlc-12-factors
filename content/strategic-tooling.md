@@ -1,3 +1,7 @@
+---
+nav_order: 11
+parent: "The Twelve Factors"
+---
 # X. Strategic Tooling: Manage a Federated, Governed Stack
 
 *Select and integrate a suite of specialized tools (IDEs, agents, gateways) routed through a central system to ensure control over cost, security, and model choice.*

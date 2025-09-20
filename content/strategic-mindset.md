@@ -1,3 +1,7 @@
+---
+nav_order: 2
+parent: "The Twelve Factors"
+---
 # I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 
 *The foundation of the Agentic SDLC is a strategic mindset shift. Treat the AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review. Your role is elevated from writing code to orchestrating solutions.*

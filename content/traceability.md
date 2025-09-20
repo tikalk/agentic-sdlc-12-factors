@@ -1,3 +1,7 @@
+---
+nav_order: 10
+parent: "The Twelve Factors"
+---
 # IX. Traceability: Linking the 'Why' to the 'How'
 
 *Maintain a clear, linked audit trail from the business request in the issue tracker (the 'why') to the specifications, plans, and code in the repository (the 'how').*

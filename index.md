@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_exclude: true
+nav_order: 0
 ---
 
 # Twelve-Factor Agentic SDLC

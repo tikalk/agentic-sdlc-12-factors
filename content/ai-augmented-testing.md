@@ -1,3 +1,7 @@
+---
+nav_order: 9
+parent: "The Twelve Factors"
+---
 # VIII. AI-Augmented, Risk-Based Testing
 
 *Use AI to make a risk-based testing strategy practical. You define what risks matter; the AI generates the specific, targeted tests needed to validate them.*
