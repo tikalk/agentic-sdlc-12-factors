@@ -14,7 +14,6 @@ Welcome to the Twelve-Factor Agentic SDLC project. This site documents a compreh
 ## Quick Links
 
 - [Read the Manifesto](manifesto.md)
-- [Implementation Playbook](playbook.md)
 
 ## The Twelve Factors
 

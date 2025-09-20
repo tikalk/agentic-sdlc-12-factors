@@ -20,29 +20,25 @@ V. [Dual Execution Loops](/content/dual-execution-loops.md)
 Master two distinct workflows: real-time synchronous collaboration for complex problems and asynchronous delegation for well-defined tasks.
 
 VI. [The Great Filter](/content/great-filter.md)  
-The developer is the ultimate arbiter of quality, filtering all AI output for correctness, architectural cohesion, security, and taste.
+The human developer is the ultimate arbiter of quality, filtering all AI output for correctness, architectural cohesion, security, and taste.
 
 VII. [Adaptive Quality Gates](/content/adaptive-quality-gates.md)  
 Implement continuous **"Micro-Reviews"** for synchronous work and formal **"Macro-Reviews"** for all asynchronous, agent-generated code.
 
-VIII. [Traceability](/content/traceability.md)  
+VIII. [AI-Augmented, Risk-Based Testing](/content/ai-augmented-testing.md)  
+The developer defines the business and security risks; the AI generates the specific, targeted tests required to validate them.
+
+IX. [Traceability](/content/traceability.md)  
 Maintain a clear, automated link from the business intent in the issue tracker (the "why") to the specification and code in the repository (the "how").
 
-IX. [Strategic Tooling](/content/strategic-tooling.md)  
+X. [Strategic Tooling](/content/strategic-tooling.md)  
 Manage a suite of specialized tools through a central gateway to ensure control over cost, security, and model choice.
-
-X. [AI-Augmented, Risk-Based Testing](/content/ai-augmented-testing.md)  
-The developer defines the business and security risks; the AI generates the specific, targeted tests required to validate them.
 
 XI. [Directives as Code](/content/directives-as-code.md)  
 Treat all natural language instructions—from reusable rules and examples to task-specific specifications (spec.md)—as version-controlled assets.
 
 XII. [Team Capability](/content/team-capability.md)  
 Build organizational muscle memory by formalizing the sharing of best practices and using a versioned suite of evaluations (Evals) to objectively measure performance.
-
-## Manifesto
-
-Read the [manifesto](manifesto.md).
 
 ## Background
 
@@ -65,4 +61,4 @@ This work is licensed under [Creative Commons Attribution ShareAlike 4.0](LICENS
 
 ## Website
 
-Visit [https://twelve-factor-agentic.org](https://twelve-factor-agentic.org) for a more readable version of this content.
+Visit [https://twelve-factor-agentic.org](https://tikalk.github.io/agentic-sdlc-12-factors/) for a more readable version of this content.
