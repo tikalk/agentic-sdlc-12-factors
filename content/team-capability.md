@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: XII. Team Capability
+nav_order: 12
+parent: The 12 Factors
 ---
 # XII. Team Capability: Systematize Learning and Improvement
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Share Learnings:** After completing a complex task, share your workflow, successful prompts, or challenges with the team in the AI Development Guild forum or a similar channel.
 - [ ] **Contribute to the "Shared Brain":** Use the /levelup workflow (Stage 4) to formalize learnings from a completed task and contribute them back to the team-ai-directives repository.
 - [ ] **Participate in Retrospectives:** Actively participate in team retrospectives focused on AI workflow effectiveness to identify what's working and what can be improved in your shared process.
+
+---
+[< Previous](directives-as-code.md) |

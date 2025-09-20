@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: II. Context Scaffolding
+nav_order: 2
+parent: The 12 Factors
 ---
 # II. Context Scaffolding: Treat Context as a Dependency
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Assemble Local Context:** Before prompting, use your IDE's features (e.g., @codebase) to make the AI aware of the relevant files and dependencies within your project.
 - [ ] **Assemble Team Context:** Pull in the team's shared best practices from the team-ai-directives repository (e.g., @team/rules/style-guides/python_pep8_and_docstrings.md).
 - [ ] **Assemble External Context:** For external knowledge, use a dedicated search tool to gather patterns and documentation before asking your primary AI to write code.
+
+---
+[< Previous](strategic-mindset.md) | [Next >](mission-definition.md)

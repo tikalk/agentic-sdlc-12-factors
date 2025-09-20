@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: III. Mission Definition
+nav_order: 3
+parent: The 12 Factors
 ---
 # III. Mission Definition: From Intent to Specification
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Start with the Mission Brief:** The process begins when you are assigned a task in the issue tracker that contains a Mission Brief (Goal, Constraints, Success Criteria).
 - [ ] **Generate the Specification (spec.md):** Your first action is to use the platform's CLI (e.g., /specify) to generate a detailed, version-controlled spec.md file from the Mission Brief.
 - [ ] **Link the Artifacts:** Commit the newly created spec.md to the feature branch and post a link to it back in the issue tracker, ensuring traceability from intent to specification.
+
+---
+[< Previous](context-scaffolding.md) | [Next >](structured-planning.md)

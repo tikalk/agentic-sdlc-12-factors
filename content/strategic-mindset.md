@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: I. Strategic Mindset
+nav_order: 1
+parent: The 12 Factors
 ---
 # I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Adopt the Mantra:** Your primary focus becomes "Debug the spec, not the code." If the AI generates incorrect code, the first step is to refine the specification or the context provided, not just to fix the output.
 - [ ] **Mentor the Intern:** When the AI makes a mistake, correct it by providing clear feedback and better examples, similar to how you would guide a junior developer. This improves future interactions.
 - [ ] **Own the Outcome:** You are the orchestrator. The AI is a tool, and you are ultimately responsible for the quality, security, and architectural cohesion of the final product.
+
+---
+| [Next >](context-scaffolding.md)

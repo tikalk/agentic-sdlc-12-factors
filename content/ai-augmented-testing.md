@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: VIII. AI-Augmented, Risk-Based Testing
+nav_order: 8
+parent: The 12 Factors
 ---
 # VIII. AI-Augmented, Risk-Based Testing
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Identify Key Risks (Human Strategy):** In the Mission Brief or spec.md, explicitly list the most critical business, security, or performance risks for the task.
 - [ ] **Prompt for Targeted Tests (AI Execution):** Command the AI to generate specific tests based on the identified risks. For example: "Write a test that asserts a 403 status when an unauthorized user tries to access this endpoint."
 - [ ] **Validate Generated Tests (Human Verification):** Always run the AI-generated tests to confirm they are functionally correct and provide meaningful validation against the specified risks.
+
+---
+[< Previous](adaptive-quality-gates.md) | [Next >](traceability.md)

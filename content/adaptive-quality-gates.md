@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: VII. Adaptive Quality Gates
+nav_order: 7
+parent: The 12 Factors
 ---
 # VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
 
@@ -7,3 +9,6 @@ nav_exclude: true
 
 - [ ] **Perform Micro-Reviews:** During synchronous [SYNC] work, continuously review each small piece of generated code as it's created in real-time.
 - [ ] **Enforce Macro-Reviews:** For every PR submitted by an async agent ([ASYNC] work), ensure it passes the full CI pipeline (automated tests, linters, security scans) before you begin a formal human review.
+
+---
+[< Previous](great-filter.md) | [Next >](ai-augmented-testing.md)

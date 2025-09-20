@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: IV. Structured Planning
+nav_order: 4
+parent: The 12 Factors
 ---
 # IV. Structured Planning: Decompose and Triage Tasks
 
@@ -8,3 +10,6 @@ nav_exclude: true
 - [ ] **Generate the Plan (plan.md):** Using the committed spec.md as the primary directive, prompt the AI (e.g., /plan) to generate a detailed, step-by-step technical plan, saved as plan.md.
 - [ ] **Review and Triage the Plan:** As the Orchestrator, critically review the plan.md. Refine it and, for each step, perform the crucial skill of triage: tagging it as [SYNC] for interactive work or [ASYNC] for delegation.
 - [ ] **Sync Tasks to Issue Tracker:** Sync the final, triaged plan back to the issue tracker (e.g., /tasks), creating a high-level checklist for team visibility.
+
+---
+[< Previous](mission-definition.md) | [Next >](dual-execution-loops.md)

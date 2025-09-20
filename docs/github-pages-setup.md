@@ -37,7 +37,6 @@ search:
 ├── _config.yml
 ├── index.md (symlink to README.md)
 ├── manifesto.md
-├── manifesto-one-pager.md
 ├── playbook.md
 ├── content/
 │   ├── strategic-mindset.md

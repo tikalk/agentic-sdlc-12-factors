@@ -1,5 +1,7 @@
 ---
-nav_exclude: true
+title: X. Strategic Tooling
+nav_order: 10
+parent: The 12 Factors
 ---
 # X. Strategic Tooling: Manage a Federated, Governed Stack
 
@@ -10,3 +12,6 @@ nav_exclude: true
     - [ ] For "AI as a Smart Search": Use a codebase search tool.
     - [ ] For "AI as a Pair Programmer" ([SYNC]): Use your primary Agentic IDE.
     - [ ] For "AI as an Intern for Toil" ([ASYNC]): Use an autonomous agent orchestrated by the MCP Server.
+
+---
+[< Previous](traceability.md) | [Next >](directives-as-code.md)
