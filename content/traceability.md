@@ -1,9 +1,7 @@
-# VIII. Traceability: Linking the 'Why' to the 'How'
+# IX. Traceability: Linking the 'Why' to the 'How'
 
-## Statement
+*Maintain a clear, linked audit trail from the business request in the issue tracker (the 'why') to the specifications, plans, and code in the repository (the 'how').*
 
-Maintain a clear, automated link from the business intent in the issue tracker (the "why") to the specification and code in the repository (the "how").
-
-## Explanation
-
-The Traceability factor establishes that a clear, automated link must exist between the original business intent captured in an issue tracker and the resulting technical artifacts, including specifications and source code. This ensures that every line of code can be traced back to its purpose, which is critical for maintainability, compliance, and impact analysis.
+- [ ] **Link the Specification:** Ensure the spec.md file in the repository is linked back to the originating issue tracker ticket. The /specify command should handle this automatically.
+- [ ] **Link the Plan:** The tasks generated from the plan.md and synced to the issue tracker (/tasks) create a direct link between the plan and the project management view.
+- [ ] **Link the Trace:** After completing a task, link to the relevant structured trace (e.g., IDE chat history or an agent's execution summary in a PR description) in the corresponding issue, capturing the full 'chain of thought'.

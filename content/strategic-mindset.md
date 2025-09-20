@@ -1,28 +1,7 @@
 # I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 
-The first factor in the Twelve-Factor Agentic SDLC emphasizes treating AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review.
+*The foundation of the Agentic SDLC is a strategic mindset shift. Treat the AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review. Your role is elevated from writing code to orchestrating solutions.*
 
-## Core Principle
-
-In the agentic SDLC, developers must adopt a strategic mindset where they position themselves as orchestrators of the development process, while treating AI agents as capable but junior collaborators - similar to interns who need guidance and oversight.
-
-## Key Aspects
-
-- **Clear Direction**: AI agents need explicit instructions and well-defined boundaries for their tasks
-- **Active Mentorship**: Developers must guide AI agents through complex decisions and architectural choices
-- **Rigorous Review**: All AI-generated output requires careful validation and quality control
-- **Strategic Delegation**: Understand when and how to leverage AI capabilities effectively
-
-## Implementation
-
-1. Provide clear, detailed instructions for each task assigned to AI
-2. Maintain oversight of the development process
-3. Review all AI outputs thoroughly before integration
-4. Build experience in effective task delegation and prompt engineering
-
-## Benefits
-
-- Higher quality output through structured collaboration
-- More efficient use of AI capabilities
-- Reduced risk of misaligned or incorrect implementations
-- Better learning and improvement over time
+- [ ] **Adopt the Mantra:** Your primary focus becomes "Debug the spec, not the code." If the AI generates incorrect code, the first step is to refine the specification or the context provided, not just to fix the output.
+- [ ] **Mentor the Intern:** When the AI makes a mistake, correct it by providing clear feedback and better examples, similar to how you would guide a junior developer. This improves future interactions.
+- [ ] **Own the Outcome:** You are the orchestrator. The AI is a tool, and you are ultimately responsible for the quality, security, and architectural cohesion of the final product.
