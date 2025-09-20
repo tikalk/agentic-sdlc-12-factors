@@ -21,6 +21,7 @@ plugins:
 # Just the Docs theme configuration
 search_enabled: true
 heading_anchors: true
+toc_enabled: false
 
 # Navigation structure
 nav_sort: case_insensitive
