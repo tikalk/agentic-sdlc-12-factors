@@ -1,6 +1,5 @@
 ---
-nav_order: 3
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # II. Context Scaffolding: Treat Context as a Dependency
 

@@ -1,6 +1,5 @@
 ---
-nav_order: 5
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # IV. Structured Planning: Decompose and Triage Tasks
 

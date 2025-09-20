@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 1
+nav_exclude: true
 ---
 
 # The Twelve-Factor Agentic SDLC: The Manifesto

@@ -1,6 +1,5 @@
 ---
-nav_order: 10
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # IX. Traceability: Linking the 'Why' to the 'How'
 

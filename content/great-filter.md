@@ -1,6 +1,5 @@
 ---
-nav_order: 7
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # VI. The Great Filter: Apply Irreplaceable Human Judgment
 

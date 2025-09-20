@@ -1,6 +1,5 @@
 ---
-nav_order: 2
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 

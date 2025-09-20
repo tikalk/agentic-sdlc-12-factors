@@ -1,6 +1,5 @@
 ---
-nav_order: 6
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # V. Dual Execution Loops: Pair Program or Delegate Toil
 

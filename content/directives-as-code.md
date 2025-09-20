@@ -1,6 +1,5 @@
 ---
-nav_order: 12
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # XI. Directives as Code: Version and Share AI Behavior
 
