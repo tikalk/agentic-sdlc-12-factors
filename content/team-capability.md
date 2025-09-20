@@ -1,3 +1,7 @@
+---
+nav_order: 13
+parent: "The Twelve Factors"
+---
 # XII. Team Capability: Systematize Learning and Improvement
 
 *Build organizational muscle memory by formalizing the sharing of best practices and using a versioned suite of evaluations (Evals) to objectively measure the performance of new prompts, tools, and models.*

@@ -1,3 +1,7 @@
+---
+nav_order: 3
+parent: "The Twelve Factors"
+---
 # II. Context Scaffolding: Treat Context as a Dependency
 
 *AI coding agents require rich, structured context to generate quality output. Manage all context—code, documentation, and team standards—with the same rigor as a critical software library.*

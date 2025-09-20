@@ -1,3 +1,7 @@
+---
+nav_order: 6
+parent: "The Twelve Factors"
+---
 # V. Dual Execution Loops: Pair Program or Delegate Toil
 
 *Based on the triage from the previous step, master two distinct workflows: real-time synchronous collaboration for complex problems and asynchronous delegation for well-defined tasks.*

@@ -1,3 +1,7 @@
+---
+nav_order: 8
+parent: "The Twelve Factors"
+---
 # VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
 
 *Implement quality assurance practices that are adapted to the specific workflow used to generate the code.*
