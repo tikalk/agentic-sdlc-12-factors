@@ -1,8 +1,8 @@
-# VIII. AI-Augmented Testing: Risk-Based Testing Strategy
+# X. AI-Augmented, Risk-Based Testing
 
 ## Statement
 
-The developer defines what to test; the AI generates the code to test it, making a risk-based testing strategy practical and scalable.
+The developer defines the business and security risks; the AI generates the specific, targeted tests required to validate them.
 
 ## Explanation
 
@@ -176,6 +176,6 @@ The AI-Augmented Testing factor establishes that AI can make comprehensive testi
 ## Links to Other Factors
 
 - [Mission Definition](mission-definition.md) - Risk identification
-- [Quality Gates](quality-gates.md) - Test requirements
-- [Process Documentation](process-documentation.md) - Test documentation
+- [Adaptive Quality Gates](adaptive-quality-gates.md) - Test requirements
+- [Traceability](traceability.md) - Test documentation
 - [Team Capability](team-capability.md) - Testing skills

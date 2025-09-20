@@ -1,8 +1,8 @@
-# III. Mission Definition: Formal Task Briefing
+# III. Mission Definition: From Intent to Specification
 
 ## Statement
 
-Every agent interaction begins with a formal mission brief containing clear goals, constraints, and success criteria.
+Initiate every task with a Mission Brief in the issue tracker to generate a formal, version-controlled specification (spec.md).
 
 ## Explanation
 
@@ -143,4 +143,4 @@ Ad-hoc prompts lead to ad-hoc results. The Mission Definition factor establishes
 - [Strategic Mindset](strategic-mindset.md) - Overall approach to AI collaboration
 - [Context Scaffolding](context-scaffolding.md) - Providing necessary context
 - [Structured Planning](structured-planning.md) - Breaking down the mission
-- [Quality Gates](quality-gates.md) - Validating mission success
+- [Adaptive Quality Gates](adaptive-quality-gates.md) - Validating mission success

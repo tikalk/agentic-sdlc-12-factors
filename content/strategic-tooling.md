@@ -1,8 +1,8 @@
-# X. Workflow Strategy: Tool Selection and Integration
+# IX. Strategic Tooling: Manage a Federated, Governed Stack
 
 ## Statement
 
-Choose appropriate tools and platforms for synchronous and asynchronous development workflows, managed through a central gateway for unified authentication, cost monitoring, and model management.
+Manage a suite of specialized tools through a central gateway to ensure control over cost, security, and model choice.
 
 ## Explanation
 
@@ -186,7 +186,7 @@ The Workflow Strategy factor establishes how teams should select, integrate, and
 
 ## Links to Other Factors
 
-- [Execution Loops](execution-loops.md) - Workflow patterns
-- [Quality Gates](quality-gates.md) - Tool integration
-- [Process Documentation](process-documentation.md) - Tool usage records
+- [Dual Execution Loops](dual-execution-loops.md) - Workflow patterns
+- [Adaptive Quality Gates](adaptive-quality-gates.md) - Tool integration
+- [Traceability](traceability.md) - Tool usage records
 - [Team Capability](team-capability.md) - Tool proficiency

@@ -1,8 +1,8 @@
-# XI. Behavioral Consistency: Directives as Code
+# XI. Directives as Code: Version and Share AI Behavior
 
 ## Statement
 
-Manage agent directives and prompts as versioned code, treating them as critical team assets that require the same rigor as application code.
+Treat all natural language instructions—from reusable rules and examples to task-specific specifications (spec.md)—as version-controlled assets.
 
 ## Explanation
 
@@ -202,5 +202,5 @@ Review the provided code changes for:
 
 - [Strategic Mindset](strategic-mindset.md) - Overall approach
 - [Context Scaffolding](context-scaffolding.md) - Context management
-- [Quality Gates](quality-gates.md) - Quality standards
+- [Adaptive Quality Gates](adaptive-quality-gates.md) - Quality standards
 - [Team Capability](team-capability.md) - Team adoption

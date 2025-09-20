@@ -5,40 +5,40 @@ This is a methodology for building software using AI coding agents as integral p
 ## The Twelve Factors
 
 I. [Strategic Mindset](/content/strategic-mindset.md)  
-Developer as Orchestrator, AI as Intern
+Treat AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review.
 
 II. [Context Scaffolding](/content/context-scaffolding.md)  
-Treat agent context as a first-class development dependency
+Manage all context—code, documentation, and team standards—with the same rigor as a critical software library.
 
 III. [Mission Definition](/content/mission-definition.md)  
-Every agent interaction begins with a formal mission brief
+Initiate every task with a Mission Brief in the issue tracker to generate a formal, version-controlled specification (spec.md).
 
 IV. [Structured Planning](/content/structured-planning.md)  
-Decompose complex tasks through agent-generated, human-approved plans
+Use the specification to generate an AI-assisted implementation plan (plan.md), which the developer reviews, refines, and triages.
 
-V. [Execution Loops](/content/execution-loops.md)  
-Choose between synchronous and asynchronous workflows based on task nature
+V. [Dual Execution Loops](/content/dual-execution-loops.md)  
+Master two distinct workflows: real-time synchronous collaboration for complex problems and asynchronous delegation for well-defined tasks.
 
 VI. [The Great Filter](/content/great-filter.md)  
-Developer as the Ultimate Arbiter of Quality
+The developer is the ultimate arbiter of quality, filtering all AI output for correctness, architectural cohesion, security, and taste.
 
-VII. [Quality Gates](/content/quality-gates.md)  
-Implement workflow-appropriate review processes
+VII. [Adaptive Quality Gates](/content/adaptive-quality-gates.md)  
+Implement continuous **"Micro-Reviews"** for synchronous work and formal **"Macro-Reviews"** for all asynchronous, agent-generated code.
 
-VIII. [AI-Augmented Testing](/content/ai-augmented-testing.md)  
-Risk-based testing strategy
+VIII. [Traceability](/content/traceability.md)  
+Maintain a clear, automated link from the business intent in the issue tracker (the "why") to the specification and code in the repository (the "how").
 
-IX. [Process Documentation](/content/process-documentation.md)  
-Maintain clear records of development workflows
+IX. [Strategic Tooling](/content/strategic-tooling.md)  
+Manage a suite of specialized tools through a central gateway to ensure control over cost, security, and model choice.
 
-X. [Workflow Strategy](/content/workflow-strategy.md)  
-Choose appropriate tools and platforms for development
+X. [AI-Augmented, Risk-Based Testing](/content/ai-augmented-testing.md)  
+The developer defines the business and security risks; the AI generates the specific, targeted tests required to validate them.
 
-XI. [Behavioral Consistency](/content/behavioral-consistency.md)  
-Manage agent directives and prompts as versioned code
+XI. [Directives as Code](/content/directives-as-code.md)  
+Treat all natural language instructions—from reusable rules and examples to task-specific specifications (spec.md)—as version-controlled assets.
 
 XII. [Team Capability](/content/team-capability.md)  
-Develop organizational competencies in agentic workflows
+Build organizational muscle memory by formalizing the sharing of best practices and using a versioned suite of evaluations (Evals) to objectively measure performance.
 
 ## Manifesto
 
