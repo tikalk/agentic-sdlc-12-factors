@@ -1,8 +1,8 @@
-# VII. Quality Gates: Workflow-Appropriate Review Processes
+# VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
 
 ## Statement
 
-Implement workflow-appropriate review processes for code quality assurance in both synchronous and asynchronous modes.
+Implement continuous **"Micro-Reviews"** for synchronous work and formal **"Macro-Reviews"** for all asynchronous, agent-generated code.
 
 ## Explanation
 
@@ -170,6 +170,6 @@ The Quality Gates factor defines how quality assurance must be embedded in both 
 ## Links to Other Factors
 
 - [The Great Filter](great-filter.md) - Human quality assessment
-- [Execution Loops](execution-loops.md) - Workflow integration
-- [Process Documentation](process-documentation.md) - Quality tracking
+- [Dual Execution Loops](dual-execution-loops.md) - Workflow integration
+- [Traceability](traceability.md) - Quality tracking
 - [Team Capability](team-capability.md) - Review skills

@@ -1,8 +1,8 @@
-# V. Execution Loops: Sync and Async Workflows
+# V. Dual Execution Loops: Pair Program or Delegate Toil
 
 ## Statement
 
-Choose between synchronous and asynchronous workflows based on task nature and team structure.
+Master two distinct workflows: real-time synchronous collaboration for complex problems and asynchronous delegation for well-defined tasks.
 
 ## Explanation
 
