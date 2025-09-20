@@ -1,6 +1,5 @@
 ---
-nav_order: 11
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # X. Strategic Tooling: Manage a Federated, Governed Stack
 

@@ -1,6 +1,5 @@
 ---
-nav_order: 9
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # VIII. AI-Augmented, Risk-Based Testing
 

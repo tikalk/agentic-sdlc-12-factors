@@ -1,6 +1,5 @@
 ---
-nav_order: 4
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # III. Mission Definition: From Intent to Specification
 

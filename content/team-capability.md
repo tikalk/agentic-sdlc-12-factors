@@ -1,6 +1,5 @@
 ---
-nav_order: 13
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # XII. Team Capability: Systematize Learning and Improvement
 

@@ -1,6 +1,5 @@
 ---
-nav_order: 8
-parent: "The Twelve Factors"
+nav_exclude: true
 ---
 # VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
 
