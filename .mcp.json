@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "agent-async-copilot": {
+      "type": "http",
+      "url": "https://mcp.async-copilot.dev/"
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    }
+  }
+}
