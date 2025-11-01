@@ -3,136 +3,139 @@
 
 ## A Detailed, Factor-by-Factor Guide to Applying the Core Principles.
 
-This playbook translates the principles of the Twelve-Factor Agentic SDLC methodology (see The Manifesto) into a practical, step-by-step workflow for developers leveraging AI coding tools and agents.
+This playbook translates the principles of the **Twelve-Factor Agentic SDLC methodology** (see The Manifesto) into a practical, step-by-step workflow for developers leveraging AI coding tools and agents.
 
 
-# I. Strategic Mindset: Developer as Orchestrator, AI as Intern
+# I. Strategic Awareness
 
-The foundation of the Agentic SDLC is a strategic mindset shift. Treat the AI as a fast, knowledgeable junior partner that requires clear direction, mentorship, and rigorous review. Your role is elevated from writing code to orchestrating solutions.
-
-
-
-- [ ] **Adopt the Mantra:** Your primary focus becomes "Debug the spec, not the code." If the AI generates incorrect code, the first step is to refine the specification or the context provided, not just to fix the output.
-- [ ] **Mentor the Intern:** When the AI makes a mistake, correct it by providing clear feedback and better examples, similar to how you would guide a junior developer. This improves future interactions.
-- [ ] **Own the Outcome:** You are the orchestrator. The AI is a tool, and you are ultimately responsible for the quality, security, and architectural cohesion of the final product.
-
-
-# II. Context Scaffolding: Treat Context as a Dependency
-
-AI coding agents require rich, structured context to generate quality output. Manage all context—code, documentation, and team standards—with the same rigor as a critical software library.
+*Develop team competencies in agentic coding thinking and prompt engineering craft.*
 
 
 
-- [ ] **Assemble Local Context:** Before prompting, use your tool's features to make the AI aware of the relevant files and dependencies within your project.
-- [ ] **Assemble Team Context:** Pull in the team's shared best practices from the team's shared directives repository.
-- [ ] **Assemble External Context:** For external knowledge, use a dedicated search tool to gather patterns and documentation before asking your primary AI to write code.
+- [ ] **Assess Your Position**: As a team, periodically review where you stand on the AI Collaboration Matrix. Are you primarily "Vibe Coders" or "AI Newbies"?
+- [ ] **Define Your Goal**: Based on your assessment [referencing the AI Collaboration Matrix], set a clear objective. For example, 'This quarter, we will focus on formalizing our workflows to move from Vibe Coder to AI Pragmatist.' This goal will guide your choice of tools and the emphasis on different workflow modes described in later factors.
+- [ ] **Review Common Pitfalls**: Check your team's process against known issues like "Using AI without context" or "No feedback loop" to identify areas for strategic improvement.
+- [ ] **Assess Competency**: Honestly evaluate your personal and team's prompt engineering level (Novice, Practitioner, Expert, Master) to identify training needs.
 
 
-# III. Mission Definition: From Intent to Specification
+# II. Context Scaffolding (AI as a Smart Search)
 
-Every task begins with a formal statement of intent, which is then translated into an executable specification. This artifact, not an informal chat, becomes the unambiguous source of truth.
-
-
-
-- [ ] **Start with the Mission Brief:** The process begins when you are assigned a task in the issue tracker that contains a Mission Brief (Goal, Constraints, Success Criteria).
-- [ ] **Generate the Specification:** Your first action is to generate a detailed, version-controlled **Specification** file from the Mission Brief.
-- [ ] **Link the Artifacts:** Commit the newly created Specification to the feature branch and post a link to it back in the issue tracker, ensuring traceability from intent to specification.
-
-
-# IV. Structured Planning: Decompose and Triage Tasks
-
-Use the committed specification to generate an AI-assisted implementation plan, which you will then review, refine, and strategically triage.
+*Treat coding agent context as a first-class development dependency.*
 
 
 
-- [ ] **Generate the Plan:** Using the committed Specification as the primary directive, prompt the AI to generate a detailed, step-by-step technical **Implementation Plan**.
-- [ ] **Review and Triage the Plan:** As the Orchestrator, critically review the plan. Refine it and, for each step, perform the crucial skill of triage: tagging it as [SYNC] for interactive work or [ASYNC] for delegation.
-- [ ] **Sync Tasks to Issue Tracker:** Sync the final, triaged plan back to the issue tracker, creating a high-level checklist for team visibility.
+- [ ] **Assemble Local Context: **Use your IDE's features (@codebase in Cursor/Cline) to make the AI aware of your project.
+- [ ] **Assemble Team Context:** Use your IDE's features (@team) to reference the local clone of the team-ai-directives repository, pulling in the team's version-controlled best practices.
+- [ ] **Perform Smart Search: **For external knowledge, use a dedicated search tool. Prompt Sourcebot with questions like "How do I implement feature X in library Y?" to gather external patterns and documentation before asking your primary AI to write code.
 
 
-# V. Dual Execution Loops: Pair Program or Delegate Toil
+# III. Mission Definition
 
-Based on the triage from the previous step, master two distinct workflows: real-time synchronous collaboration for complex problems and asynchronous delegation for well-defined tasks.
-
-
-
-- [ ] **Execute [SYNC] Tasks (Pair Programming):** For steps marked [SYNC], use your AI-powered IDE to engage in an interactive, real-time collaborative session to solve complex or ambiguous problems.
-- [ ] **Execute [ASYNC] Tasks (Automating Toil):** For steps marked [ASYNC], delegate the task to a specialized autonomous agent to handle well-defined, repetitive work, which will typically result in a Pull Request.
-
-
-# VI. The Great Filter: Apply Irreplaceable Human Judgment
-
-You are the ultimate arbiter of quality, filtering all AI output for correctness, architectural cohesion, security, and domain-specific taste. Accountability is not transferable.
+*Every agent interaction begins with a formal mission brief.*
 
 
 
-- [ ] **Commit Synchronous Work:** After validating code from your interactive IDE session, perform the git commit yourself. You own this code.
-- [ ] **Review Asynchronous Work:** When an async agent opens a pull request, perform a thorough code review. This review must validate the code against the requirements defined in the corresponding Specification.
-- [ ] **Perform the Final Merge:** The final decision to merge code into the main branch is always made by a human developer. You are the great filter.
+- [ ] **Create a Mission Brief**: Before starting a complex task, fill out a **standardized template** (available in your project management system or **team-ai-directives** repository). This brief acts as the release manifest for the task, packaging all necessary context, directives, and success criteria into a single, actionable request for the AI.
+- [ ] **Define Clear Goals: **Write a concise, one-sentence goal for the task (e.g., "Implement the user authentication endpoint").
+- [ ] **Specify Constraints: **List all non-negotiable requirements (e.g., "Must use FastAPI," "No breaking changes to the User model").
+- [ ] **Define Success Criteria: **State how you will know the task is "done" (e.g., "All existing tests pass, and new tests for the endpoint are added and passing").
 
 
-# VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
+# IV. Structured Planning (Sync/Async Triage)
 
-Implement quality assurance practices that are adapted to the specific workflow used to generate the code.
+*Decompose complex tasks through agent-generated, human-approved plans with clear sync/async boundaries.*
 
 
 
-- [ ] **Perform Micro-Reviews:** During synchronous [SYNC] work, continuously review each small piece of generated code as it's created in real-time.
-- [ ] **Enforce Macro-Reviews:** For every PR submitted by an async agent ([ASYNC] work), ensure it passes the full CI pipeline (automated tests, linters, security scans) before you begin a formal human review.
+- [ ] **Generate the Plan**: Using the **Mission Brief**, ask your Agentic IDE to generate a detailed, step-by-step execution plan.
+- [ ] **Review and Approve the Plan**: Critically review the AI's plan. Modify it, re-order steps, and ensure it aligns with your technical approach before approving it.
+- [ ] **Triage the Plan**: For each step in the approved plan, add a tag: `[SYNC]` for interactive work you will do with the AI, or `[ASYNC]` for a well-defined task you will delegate. Note that complex `[ASYNC]` tasks may be further decomposed into sub-plans by the autonomous agent itself during execution.
+
+
+# V. Execution Loops: "Pair Programming" vs. "Automating Toil"
+
+*Based on your task triage in Factor IV, choose between these two execution loops.*
+
+
+
+- [ ] **Execute [SYNC] Tasks (Pair Programming):** For steps marked [SYNC], use your Agentic IDE to engage in an interactive Plan-Action-Reflect-Correct (P-A-R-C) loop. This is a real-time collaborative session where you and your "intern" work together.
+- [ ] **Execute [ASYNC] Tasks (Automating Toil):** For steps marked [ASYNC], delegate the task to a specialized agent (e.g., Jules, All-Hands, Codex) with the relevant context and mission. This is for getting rid of boilerplate and well-defined, repetitive work. This process is initiated manually by the developer, who runs a local autonomous agent with the relevant context and mission brief.
+
+
+# VI. Developer Ownership (Commit/Merge)
+
+*Maintain clear responsibility boundaries in both synchronous and asynchronous workflows.*
+
+
+
+- [ ] **Commit Synchronous Work**: After validating code from your interactive IDE session, perform the git commit yourself.
+- [ ] **Review Asynchronous Work**: When an async agent opens a pull request, perform a thorough code review.
+- [ ] **Use AI-Assistive Reviewers**: Leverage tools like PR-Agent to get an initial automated analysis of the agent's PR.
+- [ ] **Perform the Final Merge**: The final decision to merge code into the main branch is always made by a human developer.
+
+
+# VII. Quality Gates (Micro/Macro)
+
+*Implement workflow-appropriate review processes for code quality assurance.*
+
+
+
+- [ ] **Perform Micro-Reviews**: During synchronous P-A-R-C loops, continuously review each small piece of generated code as it's created.
+- [ ] **Enforce Macro-Reviews**: For every PR submitted by an async agent, ensure it passes the full CI pipeline (automated tests, linters, security scans) before beginning a human review. This pipeline should include not only unit tests but also regression checks against a relevant evaluation suite to ensure the agent's output is not just functionally correct but also high quality.
 
 
 # VIII. AI-Augmented, Risk-Based Testing
 
-Use AI to make a risk-based testing strategy practical. You define what risks matter; the AI generates the specific, targeted tests needed to validate them.
+*The developer defines what to test; the AI generates the code to test it.*
 
 
 
-- [ ] **Identify Key Risks (Human Strategy):** In the Mission Brief or Specification, explicitly list the most critical business, security, or performance risks for the task.
-- [ ] **Prompt for Targeted Tests (AI Execution):** Command the AI to generate specific tests based on the identified risks. For example: "Write a test that asserts a 403 status when an unauthorized user tries to access this endpoint."
-- [ ] **Validate Generated Tests (Human Verification):** Always run the AI-generated tests to confirm they are functionally correct and provide meaningful validation against the specified risks.
+- [ ] **Identify Key Risks (Human Strategy): **In the **Mission Brief (Factor III)**, explicitly list the most critical business, security, or performance risks for the task at hand. This is a human-centric strategic step that guides the AI.
+- [ ] **Prompt for Targeted Tests (AI Execution): **Command the AI to generate specific tests based on the identified risks. Use clear, direct language. For example:
+    - [ ] "Write a test that asserts a 403 status when an unauthorized user tries to access this endpoint."
+    - [ ] "Generate a performance test for this function to ensure it completes under 50ms with 10,000 items.".
+- [ ] **Validate Generated Tests (Human Verification)**: Always run the AI-generated tests. The developer is responsible for confirming that the tests are not only functionally correct but also provide meaningful validation against the specified risks.
 
 
-# IX. Traceability: Linking the 'Why' to the 'How'
+# IX. Process Documentation
 
-Maintain a clear, linked audit trail from the business request in the issue tracker (the 'why') to the specifications, plans, and code in the repository (the 'how').
-
-
-
-- [ ] **Link the Specification:** Ensure the Specification file in the repository is linked back to the originating issue tracker ticket.
-- [ ] **Link the Plan:** The tasks generated from the Implementation Plan and synced to the issue tracker create a direct link between the plan and the project management view.
-- [ ] **Link the Trace:** After completing a task, link to the relevant structured trace (e.g., IDE chat history or an agent's execution summary in a PR description) in the corresponding issue, capturing the full 'chain of thought'.
-
-
-# X. Strategic Tooling: Manage a Federated, Governed Stack
-
-Select and integrate a suite of specialized tools (IDEs, agents, gateways) routed through a central system to ensure control over cost, security, and model choice.
+*Maintain clear records of both synchronous and asynchronous development workflows.*
 
 
 
-- [ ] **Use a Central API Gateway:** Ensure all AI tools your team uses are configured to route their calls through a central gateway.
+- [ ] **Link the Trace**: After completing a task, link to the relevant structured trace in the corresponding project management issue. For synchronous work, this is the IDE chat history; for asynchronous work, it is the execution summary or PR description generated by the coding agent. The goal is to capture the full 'chain of thought' for future review..
+- [ ] **Ensure PR Descriptions are Clear**: For async work, verify that the agent-generated PR description clearly explains the changes, the rationale, and the work performed.
+
+
+# X. Workflow Strategy (The Right Tool for the Right Role)
+
+*Choose appropriate tools and platforms for synchronous and asynchronous development workflows.*
+
+
+
 - [ ] **Choose the Right Tool for the Role:**
-    - [ ] For "AI as a Smart Search": Use a codebase search tool.
-    - [ ] For "AI as a Pair Programmer" ([SYNC]): Use your primary Agentic IDE.
-    - [ ] For "AI as an Intern for Toil" ([ASYNC]): Use an autonomous agent.
+    - [ ] For** "AI as a Smart Search": **Use codebase search like Sourcebot.
+    - [ ] For **"AI as a Pair Programmer"**: Use your primary Agentic IDE like Cursor, or GitHub Copilot with Cline/RooCode.
+    - [ ] For **"AI as an Intern for Toil": **Use an autonomous agent like Codex, All-Hands or Jules.
 
 
-# XI. Directives as Code: Version and Share AI Behavior
+# XI. Behavioral Consistency (Directives as Code)
 
-Treat all natural language instructions that guide AI behavior—from reusable rules to task-specific specifications—as version-controlled assets.
-
-
-
-- [ ] **Pull Latest Directives:** Before starting a new major feature, pull the latest changes from the team's shared directives repository to ensure you are using the team's most current standards.
-- [ ] **Use Standardized Templates:** Whenever possible, reference a shared directive from the library for common tasks.
-- [ ] **Contribute Back:** If you develop a highly effective new prompt or a "golden" example, submit it back to the team's shared repository via a pull request.
-
-
-# XII. Team Capability: Systematize Learning and Improvement
-
-Build organizational muscle memory by formalizing the sharing of best practices and using a versioned suite of evaluations to objectively measure the performance of new prompts, tools, and models.
+*Manage agent directives and prompts as versioned code.*
 
 
 
-- [ ] **Share Learnings:** After completing a complex task, share your workflow, successful prompts, or challenges with the team in a designated forum or channel.
-- [ ] **Contribute to the "Shared Brain":** Formalize learnings from a completed task and contribute them back to the team's shared directives repository.
-- [ ] **Participate in Retrospectives:** Actively participate in team retrospectives focused on AI workflow effectiveness to identify what's working and what can be improved in your shared process.
+- [ ] **Pull Latest Directives**: Before starting a new project or major feature, pull the latest changes from the **team-ai-directives** repository.
+- [ ] **Use Standardized Templates**: Whenever possible, use a shared template from the library for common tasks like creating a new component or writing a PR description.
+- [ ] **Contribute Back**: If you develop a highly effective new prompt or directive, submit it back to the team's shared repository via a pull request.
+
+
+# XII. Team Capability (Training & Improvement)
+
+*Develop team competencies in both synchronous and asynchronous agentic workflows.*
+
+
+
+- [ ] **Share Learnings**: After completing a complex task, share your workflow, successful prompts, or challenges with the team in the **AI Development Guild** forum. Contribute any new successful 'golden test cases' to the team's shared evaluation suite.
+- [ ] **Participate in Retrospectives**: Actively participate in team retrospectives focused on AI workflow effectiveness.
+- [ ] **Update the Memory Bank**: When a task is complete, update the project's **progress documentation** (such as progress.md or activeContext.md files, as defined by your team's documentation standards) to reflect the changes, ensuring the team's collective memory is always current.

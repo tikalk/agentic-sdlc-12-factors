@@ -1,258 +1,126 @@
 # The Workflow
 
 
-## A Practical, Step-by-Step Guide for Developers
+## A Practical, Step-by-Step Guide for Developers, with Actionable Prompts.
 
-**Objective:** To translate the Agentic SDLC principles into a practical workflow, moving from ad-hoc prompting to structured, high-velocity collaboration. This is how you use the platform's tools to act as an "orchestrator."
+**Objective:** To translate the Agentic SDLC principles into a practical workflow, moving from ad-hoc prompting to structured, high-velocity collaboration. This is how you leverage AI as a capable "intern" with you as the "orchestrator."
 
 **Key Principle:** The developer is the ultimate arbiter of quality. You own the final git merge. Accountability is not transferable.
 
 
-## Workflow Modes
+# Stage 0: IDE Setup (One-Time Task)
 
-**Overview:** The Agentic SDLC supports two primary workflow modes that adapt the development process to different project contexts and team needs.
-
-### Build Mode (Default)
-**When to Use:** New feature development, greenfield projects, or when you have a clear product vision but need to discover the implementation details.
-
-**Characteristics:**
-- Focuses on rapid iteration and exploration
-- Emphasizes implementation-first approach with lightweight specifications
-- Best for: Prototyping, MVPs, and experimental features
-- Workflow: Implementation → Analysis → Specification refinement
-
-**Mode Indicators:**
-- Commands prioritize implementation speed over comprehensive planning
-- Analysis tools focus on code patterns and architectural decisions
-- Iterative development with automatic context detection
-
-### Spec Mode
-**When to Use:** Complex systems, regulated environments, or when detailed specifications are required before implementation begins.
-
-**Characteristics:**
-- Emphasizes comprehensive specification before implementation
-- Focuses on formal requirements, contracts, and detailed planning
-- Best for: Enterprise applications, APIs, and mission-critical systems
-- Workflow: Specification → Planning → Implementation
-
-**Mode Indicators:**
-- Commands require explicit specification references
-- Analysis tools validate against formal requirements
-- Strict adherence to specification-driven development principles
-
-### Mode Switching
-**Automatic Detection:** The system automatically detects the appropriate mode based on project state and workflow context.
-
-**Manual Override:** Use `/mode build` or `/mode spec` to explicitly set the workflow mode for your current session.
-
-**Mode Persistence:** Modes persist within a development session but can be changed as project needs evolve.
-
-**Impact on Stages:**
-- **Stage 0-1:** Mode affects constitution and specification generation approaches
-- **Stage 2:** Planning depth varies (lightweight in build mode, comprehensive in spec mode)
-- **Stage 3:** Implementation style adapts (exploratory vs. specification-driven)
-- **Stage 4:** Knowledge capture focuses on different learnings based on mode
-
-# Stage 0: Foundation & Setup
-
-**Goal:** To establish the foundational rules and configure the development environment for a project. This is a one-time setup process for a new repository, ensuring that all subsequent AI-driven work aligns with the project's core architectural and security principles.
-
-**Note:** This initial setup stage is performed in a standard terminal.
-
-
-### The Process:
+Before you begin, you need to have the team's shared directives available locally.
 
 
 
-1. **Project Initialization (specify /init)**
-    * **Action:** Run the spec-kit init command in the project root. Supply `--team-ai-directive` if you want 
-    *      the CLI to clone or update the shared directives automatically.The developer runs the spec-kit init command in their terminal within the project's root directory.
-    * **Purpose:** Scaffold `.specify/` config, clone/pull the team-ai-directives repo (into the default `.specify/memory/team-ai-directives` or a configured path), and register credentials/endpoints so later commands 
-    * have consistent context.This critical first step initializes the project, setting up the necessary local configurations and cloning the team-ai-directives repository so its modules are available for the CLI to use. The command configures the necessary endpoints and credentials, and clones or pulls the latest version of the team-ai-directives repository, making the team's shared knowledge system available locally. It is the formal handshake that brings a repository into the managed Agentic SDLC ecosystem.
-    * **Tip:** After init, you can pre-create a feature branch; the CLI will recognize it and align future 
-    *      worktrees with that branch.
-    * **Note:** This initial setup stage is performed in a standard terminal.
-2. **Establishing the Constitution (/constitution)**
-    * **Action:** The Tech Lead or a senior engineer executes the /constitution command **from within the IDE**, referencing modules from the central team-ai-directives repository and adding any project-specific principles.
-    * **Purpose:** To **assemble a project-specific constitution.md file** that serves as the immutable set of high-level rules for the repository. This file is automatically injected by the **spec-kit CLI** into the context for all major commands (/specify, /plan), ensuring the AI's output is always aligned with the project's standards.
+1. **Clone the Directives Repository:** Open a terminal and clone the central repository to a known location on your local machine (e.g., inside your main projects folder). \
+git clone https://github.com/tikalk/agentic-sdlc-team-ai-directives.git
+2. **Configure Your IDE:** In your Agentic IDE (e.g., Cursor, VSCode with an extension), configure the @team command or equivalent context source to point to your local cloned copy of the team-ai-directives repository. This will allow the IDE to pull context from the version-controlled files directly.
+3. **Verify Setup:** In your IDE's AI chat, type @team and verify that it can find and suggest files from the repository you just cloned.
 
-**Example Command:**
 
-The Tech Lead assembles a constitution for a new microservice.
+# Stage 1: Mission Prep: Briefing & Context
+
+
+
+* **Assess the Task:** Quickly determine if the task is best for real-time collaboration **[SYNC]** or if it's a well-defined chunk of work suitable for delegation **[ASYNC]**.
+* **Create a Mission Brief:** In our issue tracker (Jira, GitHub Issues), **create a new issue** using the "Agentic Task: Mission Brief" template. Don't start prompting without it. Include:
+    * **Goal:** A clear, one-sentence objective (e.g., "Implement the user authentication endpoint").
+    * **Constraints:** Non-negotiable requirements (e.g., "Must use FastAPI," "No breaking changes to the User model").
+    * **Success Criteria:** How you will know the task is "done" (e.g., "All existing tests pass, and new tests for the endpoint are added and passing").
+* **Assemble Context:** Give your AI intern the right documents to succeed. In the Mission Brief issue, reference the modules from our team-ai-directives repository that will form the **Context Packet**. Also provide runtime context using your IDE's features (@codebase, @files, @web).
+
+**Prompt Template to Assist in Briefing:**
 
 
 ```
-/constitution "Assemble the constitution for this service. Import principles from @team/context_modules/principles/v1/stateless_services.md and @team/context_modules/principles/v1/zero_trust_security_model.md. Add the custom principle: 'All public APIs must be versioned.'"
+I need to create a new Mission Brief in our issue tracker for the objective: "{YOUR_OBJECTIVE}".
+- Propose a one-sentence "{Goal}", measurable "{Success Criteria}" and define the key "{Constraints}".
+- Using @web, research best practices for this task.
+Help me choose the best components from our team's library for the Context Packet.
+- Using `@team`, search `/context_modules/personas/v1/` and suggest the most appropriate persona.
+- Using `@team`, search `/context_modules/rules/v1/` for relevant style guides and security rules.
+- Using `@team`, search `/context_modules/examples/v1/` for a high-quality example related to my objective.
 ```
 
 
-**Outcome of Stage 0:**
+   
+
+
+# Stage 2: The Core Loop: Plan, Triage, and Execute
 
 
 
-* The developer's IDE is fully integrated with the Orchestration Hub.
-* A constitution.md file is created and committed to the root of the project repository, ready to guide all future development.
+* **Generate the Plan:** Using your Mission Brief, ask your Agentic IDE: "Generate a detailed, step-by-step plan to achieve this mission."
+* **Review & Triage the Plan:** Critically review the AI's plan. Modify it as needed, then for each step, add a tag: **[SYNC]** for interactive work or **[ASYNC]** for delegation.
+* **Execute the Plan**:
+    * **For [SYNC] Tasks**: Use your Agentic IDE with the required context and tools directly into your chat session based on the Mission Brief.
+    * **For [ASYNC] Tasks:** Delegate the task by invoking a local autonomous agent runner. You would typically pass the Mission Brief (or a file derived from it, like agents.md) to a script that executes the agent. The expected output is a new local branch with the generated code, ready for you to review, commit, and push as a pull request.
 
-
-# Stage 1: Feature Specification
-
-**Goal:** To translate the formal **Specification (spec.md)** into a detailed, human-validated **Implementation Plan (plan.md)** and synchronize it with the team's issue tracker.
-
-**Note:** This stage and all subsequent stages are performed from within the Intelligent IDE.
-
-
-### The Process: Generate Specification (/specify)
-
-
-
-1. **Craft the Directive:** The developer's primary action is to craft a single, comprehensive prompt for the /specify command. This prompt is a rich, natural language directive that fuses the high-level intent from the issue tracker with essential context and constraints.
-2. **Execute the Command:** The developer executes the command within the Intelligent IDE. The LLM then:
-    * Parses the rich prompt.
-    * Resolves references like @issue-tracker {ISSUE-ID} and @team/personas/....
-    * Injects the timeless principles from the project's **Constitution (constitution.md)**.
-    * Generates the formal spec.md file based on all the provided context.
-3. **Review and Commit:** The developer performs a critical "macro-review" of the generated spec.md. The goal is to ensure the specification accurately and completely captures the feature's intent. Once satisfied, the developer commits the spec.md to the Git repository, establishing it as the immutable source of truth for the feature.
-
-**Example Command:**
-
-The developer synthesizes the mission, user persona, and critical constraints into a single, powerful directive.
+**Prompt Template for Planning:**
 
 
 ```
-/specify "Generate the specification for the feature in @issue-tracker ISSUE-123. The target user is the @team/personas/v1/data_analyst.md. The operation must be asynchronous to handle large dashboards. The PDF title must include the dashboard name and an export timestamp."
+Based on my Mission Brief in issue {ISSUE-123}:
+- Generate a detailed, step-by-step plan.
+- Use @codebase to identify all affected files that should be part of the plan.
+- For each step, suggest if it is better suited for [SYNC] or [ASYNC] execution and define the expected outcome.
 ```
 
 
-**Outcome of Stage 1:** A committed spec.md file in the project's repository. This artifact serves as the locked-in input for the next stage: Planning.
+ 
 
 
-# Stage 2: Planning & Task Management
-
-**Goal:** To translate the formal **Specification (spec.md)** into a detailed, human-validated **Implementation Plan (plan.md)** and synchronize it with the team's issue tracker, making the feature ready for development.
-
-
-### The Process:
+# Stage 3: Finishing the Job: Integration & Quality Assurance
 
 
 
-1. **Generate the Implementation Plan (/plan)**
-    * **Action:** The developer executes a single /plan command. The power of this step lies in the richness of the prompt provided by the developer. This prompt goes beyond just defining the tech stack; it includes strategic guidance, risk considerations, and testing priorities.
-    * **Purpose:** To guide the AI in generating a comprehensive and strategically-sound first draft of the plan.md. By front-loading human experience into the command's directive, the resulting plan is far more robust. The AI generates the technical steps and provides its preliminary triage suggestions ([SYNC] or [ASYNC]).
+* **Act as The Great Filter:** Remember, you are the final arbiter of quality. Apply your experience, taste, and domain knowledge to all AI-generated code.
+* **Perform Micro-Reviews** (for [SYNC] work): Continuously validate each small piece of code as it's created during your interactive session.
+* **Perform Macro-Reviews** (for [ASYNC] work): When an agent submits a pull request:
+    1. Ensure it passes the full CI pipeline first (including tests, linters, and any checks against our /evals/ suite).
+    2. Use an AI-assistive tool (e.g., PR-Agent) to get an initial automated analysis.
+    3. Perform the final human review and merge.
+* **Prompt for Risk-Based Tests:** Based on the "Key Risks" you identify in your Mission Brief, command the AI to generate targeted tests.
 
-**Example Command:**
-
-`/plan "Generate the plan from spec.md. Tech stack is Python with FastAPI and a Celery worker. I'm concerned about performance with large datasets, so include specific performance testing tasks. Also, add steps for creating risk-based security tests for the new API endpoint. Suggest a triage for each step."` 
-
-
-
-2. **Final Triage and Commit (The Great Filter)**
-    * **Action:** The developer performs a critical "macro-review" of the single, comprehensive plan.md file generated by the AI.
-    * **Purpose:** This is the essential human validation step. The developer verifies the overall strategy, checks for any missed steps, and most importantly, makes the **final decision** on the triage tags ([SYNC] vs. [ASYNC]). This act of applying human judgment to the AI's output is what ensures the plan is practical and safe 
-    * to execute. Once satisfied, the developer commits the finalized plan.mdThis is the essential human validation step. The developer verifies the overall strategy, checks for any missed steps, and most importantly, makes the final decision on the triage tags ([SYNC] vs. [ASYNC]). This act of applying human judgment to the AI's output is what ensures the plan is practical and safe to execute. Once satisfied, the developer commits the finalized plan.md.
-3. **Synchronize with Issue Tracker (/tasks)**
-    * **Action:** The developer executes the /tasks command.
-    * **Purpose:** To create a visible and actionable representation of the plan in the team's project management tool. The command parses the now-committed plan.md and populates the corresponding issue tracker 
-    * ticket with a checklist or sub-tasksTo create a visible and actionable representation of the plan in the team's project management tool. The command parses the now-committed plan.md and populates the corresponding issue tracker ticket with a checklist or sub-tasks.
-
-**Example Command:**
-
-`/tasks "Create a checklist in @issue-tracker ISSUE-123 from the final plan.md."` 
-
-**Outcome of Stage 2:**
-
-
-
-* A committed plan.md file that represents a robust, strategically-sound, and human-validated execution plan.
-* A corresponding set of tasks created in the issue tracker, ready for implementation.
-
-
-# Stage 3: Implementation
-
-**Goal:** To execute the human-validated plan.md and translate it into high-quality, working code. This stage is entirely focused on development, with the interaction model (supervised or autonomous) having been predetermined for each task in Stage 2.
-
-
-### The Process:
-
-
-
-1. **Executing the Plan:** The developer systematically works through the tasks laid out in the plan.md and mirrored in the issue tracker. The [SYNC] or [ASYNC] tag on each task dictates the execution method.
-2. **[ASYNC] Tasks: Autonomous Delegation**
-    * **Action:** For tasks marked [ASYNC], the developer delegates the entire block of work to an autonomous agent using the /implement command.
-    * **Purpose:** To achieve maximum velocity on well-defined, lower-risk tasks (e.g., boilerplate, data models, standard CRUD endpoints). This frees the developer to focus their attention on more complex parts of the feature.
-    * **Review Style:** The developer performs a **"Macro-Review"** of the resulting code, typically as a single pull request or commit. They validate the completed work against the plan.md and spec.md.
-
-**Example Command:**
-
-`/implement "Implement the data access layer for the User model as defined in plan.md, tasks 4 through 7."` 
-
-
-
-3. **[SYNC] Tasks: Interactive Pair Programming**
-    * **Action:** For tasks marked [SYNC], the developer engages in a tight, interactive loop with the AI. This involves using targeted /implement commands for specific functions or engaging in a rapid, iterative dialogue to solve complex problems.
-    * **Purpose:** To combine human intuition and strategic direction with the AI's rapid code generation. This approach is essential for high-risk, ambiguous, or architecturally critical tasks that require fine-grained control and immediate feedback.
-    * **Review Style:** This mode is characterized by continuous **"Micro-Reviews."** The developer reviews each small piece of code as it is generated, correcting, refining, and guiding the AI in real-time.
-4. **Collaborative Prompts for Strategic Tasks:**
-    * Beyond direct code generation, the developer uses natural language prompts for nuanced activities that require strategic thought, such as testing.
-
-**Example Command:**
-
-`/implement "Implement the entire data access layer for the User model as defined in plan.md, tasks 4 through 7."` 
-
-
-### Core Principle: Accountability is Not Transferable
-
-Regardless of whether a task is completed via SYNC or ASYNC methods, the developer remains the ultimate owner of the code. The AI is a tool, and the developer is the engineer responsible for understanding, testing, and committing the final work. This principle is fundamental to maintaining professional quality standards.
-
-**Outcome of Stage 3:**
-
-
-
-* A feature branch containing committed, working code that fulfills the spec.md.
-* A corresponding suite of tests (as defined in the plan.md) that validate the implementation.
-* The code is now ready for a formal team pull request review.
-
-
-# Stage 4: Leveling Up
-
-**Goal:** To capture knowledge from a completed feature, contribute it back to the central **Knowledge System**, and create a final traceability record in the original issue. This stage closes the loop on both machine and human knowledge.
-
-
-### The Process:
-
-
-
-1. **Declare Intent to Level Up (/levelup)**
-    * **Action:** After the feature is implemented, the developer executes a single /levelup command. The prompt is purely strategic, defining *what* to analyze and *what* the desired outputs are, without instructing the system on the underlying mechanics (like creating a PR).
-    * **Purpose:** To kick off the entire knowledge-capture and traceability workflow with a single, intent-driven directive. The command inherently knows it must perform an analysis, create a file, generate a pull request, and draft a summary comment.
-
-**Example Command:**
+**Prompt Template for Risk-Based Testing:**
 
 
 ```
-/levelup "The work for @issue-tracker ISSUE-123 is complete. Let's formalize the learnings for the team.
-1. Analyze our workflow and extract the best practice for FastAPI error handling. Codify this as a new, reusable rule.
-2. The description for this new asset should reference @issue-tracker ISSUE-123 as the context for why it's valuable.
-3. Prepare a final Trace Summary for the original issue, explaining the key decisions and linking to the new knowledge asset we're creating.
-Present the drafted pull request details and the issue comment for my final review before you execute."
-
+Generate targeted tests for @file:{path/to/your/code.py}.
+- The primary goal is to validate against this risk I've identified: {DEVELOPER_IDENTIFIED_RISK}.
+- As a secondary goal, ensure all {Success Criteria} from our Mission Brief in issue {ISSUE-123} are met.
+- My IDE is configured with our team's standards, so all tests must adhere to the patterns and style guides defined there.
 ```
 
 
 
-2. **Review and Confirm (Human Validation)**
-    * **Action:** The AI performs the analysis and presents a plan of action back to the developer, showing the exact content it has drafted for the new directive file, the PR description, and the issue tracker comment.
-    * **Purpose:** This is the critical human-in-the-loop checkpoint before the system performs irreversible actions. The developer verifies that the AI correctly interpreted the intent and that the generated content is accurate and valuable. They then give a simple confirmation to proceed.
-3. **Execute and Finalize**
-    * **Action:** Upon receiving confirmation, the /levelup command executes its built-in functions: it programmatically creates a branch in the team-ai-directives repo, commits the new file, opens the pull request, and posts the summary comment to the issue tracker.
-    * **Purpose:** To complete the workflow with full automation, ensuring the final records are created exactly as the developer approved them.
-4. **Team Review**
-    * **Action:** The pull request in the team-ai-directives repository is reviewed by the team.
-    * **Purpose:** The final "Directives as Code" review ensures the new knowledge asset is clear, valuable, and collectively owned before being merged into the team's shared brain.
-
-**Outcome of Stage 4:**
+# Stage 4: Leveling Up: Team Practices & Continuous Improvement
 
 
 
-* A pull request is created in the team-ai-directives repo, codifying a new best practice.
-* A final **Trace Summary** comment is posted to the original issue, providing closure and linking to the new knowledge asset.
-* The virtuous cycle is complete: the project is done, the learnings are captured, and the team (and the AI) is smarter for the next task.
+* **Link the Trace:** After completing a task, link to the relevant structured trace (the IDE chat history or the agent's PR) in the project management issue to preserve the "why."
+* **Use the Right Tool for the Role:**
+    * **Smart Search:** Sourcebot
+    * **Pair Programmer:** Cursor/GitHub Copilot with Cline/RooCode
+    * **Autonomous Intern:** All-Hands, Jules
+* **Contribute Back:** If you develop a highly effective new rule or exemplar, submit it to the team-ai-directives repository via a pull request. This is how the entire team gets smarter.
+* **Update the Team's Memory:** After your change is merged, update any shared project documentation so the team's collective knowledge—and the AI's future context—is always current.
+
+**Prompt Template to Analyze, Document, and Contribute:**
+
+
+```
+The work for issue {ISSUE-123} is complete, and this chat history represents a successful workflow. Let's formalize this success for the team.
+1. Analyze and Extract: Review our entire interaction and extract the single most valuable new rule or code exemplar that made this workflow effective.
+2. Prepare a Pull Request: Draft a complete Pull Request to our team-ai-directives repository that adds this new asset. The draft must include:
+	A clear PR Title.
+	A PR Description explaining what the new asset is and why it's valuable to the team,
+referencing {ISSUE-123} for context.
+	The complete File Content for the new rule or exemplar, including a title, description, and code examples.
+3. Update the Issue Tracker: Independently, draft a concise comment to post directly to {ISSUE-123}. This comment should be a Trace Summary of our work on the original task, including:
+	The problem that was solved.
+	The key decisions made.
+	The final accepted code solution.
+Present the full Pull Request draft and the Issue Tracker Comment in separate, clearly marked code blocks for my final review before you proceed.
