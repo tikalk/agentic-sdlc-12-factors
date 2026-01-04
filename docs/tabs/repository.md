@@ -34,33 +34,27 @@ The structure is now simplified, reflecting its role as a pure library and remov
 
     ├── examples/
 
-    │   └── v1/
+    │   ├── testing/
 
-    │       ├── testing/
+    │   │   └── pytest_class_based.md
 
-    │       │   └── pytest_class_based.md
-
-    │       └── …
+    │   └── …
 
     ├── personas/
 
-    │   └── v1/
+    │   ├── senior_python_developer.md
 
-    │       ├── senior_python_developer.md
-
-    │       └── …
+    │   └── …
 
     └── rules/
 
-        └── v1/
+        ├── security/
 
-            ├── security/
+        │   └── prevent_sql_injection.md
 
-            │   └── prevent_sql_injection.md
+        └── style-guides/
 
-            └── style-guides/
-
-                └── python_pep8_and_docstrings.md
+            └── python_pep8_and_docstrings.md
 
  
 
@@ -70,7 +64,7 @@ The structure is now simplified, reflecting its role as a pure library and remov
 
 
 * /context_modules/: The heart of the repository. This is the canonical source for the Agentic IDE to fetch our team's AI guidance, including personas, rules, and examples.
-* **A Note on Versioning (/v1/)**: Treating our directives as a versioned library is non-negotiable. The v1, v2, etc., subdirectories allow the Agentic IDE to manage breaking changes gracefully and support multiple standards across different projects. A project's AI behavior remains stable, even as the team's standards evolve.
+* **A Note on Versioning**: Treating our directives as a versioned library is non-negotiable. We use git tags (v1.0.0, v2.0.0, etc.) to manage breaking changes gracefully and support multiple standards across different projects. A project's AI behavior remains stable, even as the team's standards evolve.
 
 
 # Governance and Contribution
