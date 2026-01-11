@@ -1,7 +1,6 @@
 ---
 title: III. Mission Definition
-nav_order: 3
-parent: The 12 Factors
+layout: default
 ---
 # III. Mission Definition: From Intent to Specification
 

@@ -1,7 +1,6 @@
 ---
 title: VI. The Great Filter
-nav_order: 6
-parent: The 12 Factors
+layout: default
 ---
 # VI. The Great Filter: Apply Irreplaceable Human Judgment
 

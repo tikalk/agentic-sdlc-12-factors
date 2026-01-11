@@ -1,7 +1,6 @@
 ---
 title: X. Strategic Tooling
-nav_order: 10
-parent: The 12 Factors
+layout: default
 ---
 # X. Strategic Tooling: Manage a Federated, Governed Stack
 

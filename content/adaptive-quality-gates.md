@@ -1,7 +1,6 @@
 ---
 title: VII. Adaptive Quality Gates
-nav_order: 7
-parent: The 12 Factors
+layout: default
 ---
 # VII. Adaptive Quality Gates: Review Appropriately for Each Workflow
 

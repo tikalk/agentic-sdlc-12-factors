@@ -1,9 +1,6 @@
 ---
 layout: default
 title: The 12 Factors
-nav_order: 1
-has_children: true
-toc_exclude: true
 ---
 
 # Twelve-Factor Agentic SDLC

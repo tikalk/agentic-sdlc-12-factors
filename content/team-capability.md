@@ -1,7 +1,6 @@
 ---
 title: XII. Team Capability
-nav_order: 12
-parent: The 12 Factors
+layout: default
 ---
 # XII. Team Capability: Systematize Learning and Improvement
 

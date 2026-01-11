@@ -1,7 +1,6 @@
 ---
 title: I. Strategic Mindset
-nav_order: 1
-parent: The 12 Factors
+layout: default
 ---
 # I. Strategic Mindset: Developer as Orchestrator, AI as Intern
 

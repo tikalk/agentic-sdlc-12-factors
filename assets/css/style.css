@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    padding: 20px 0;
+    border-bottom: 4px solid #F37021; /* Orange accent */
+}
+.logo {
+    max-width: 150px;
+}
+h1, h2, h3 {
+    margin-top: 1.5em;
+}
+a {
+    color: #F37021;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
