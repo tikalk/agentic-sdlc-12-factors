@@ -1,7 +1,6 @@
 ---
 title: V. Dual Execution Loops
-nav_order: 5
-parent: The 12 Factors
+layout: default
 ---
 # V. Dual Execution Loops: Pair Program or Delegate Toil
 

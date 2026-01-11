@@ -1,7 +1,6 @@
 ---
 title: IX. Traceability
-nav_order: 9
-parent: The 12 Factors
+layout: default
 ---
 # IX. Traceability: Linking the 'Why' to the 'How'
 

@@ -1,7 +1,6 @@
 ---
 title: XI. Directives as Code
-nav_order: 11
-parent: The 12 Factors
+layout: default
 ---
 # XI. Directives as Code: Version and Share AI Behavior
 

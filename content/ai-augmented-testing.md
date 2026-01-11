@@ -1,7 +1,6 @@
 ---
 title: VIII. AI-Augmented, Risk-Based Testing
-nav_order: 8
-parent: The 12 Factors
+layout: default
 ---
 # VIII. AI-Augmented, Risk-Based Testing
 

@@ -1,7 +1,6 @@
 ---
 title: II. Context Scaffolding
-nav_order: 2
-parent: The 12 Factors
+layout: default
 ---
 # II. Context Scaffolding: Treat Context as a Dependency
 
